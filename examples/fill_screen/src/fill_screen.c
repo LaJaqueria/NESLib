@@ -11,7 +11,8 @@
 #include <neslib.h>
 
 int main(){
-    load_palette();
+    unsigned char i=0;
+    load_palette(PALETTE_BG0, GREEN, ORANGE, PINK, RED);
     while(1);
     
 	return 0;

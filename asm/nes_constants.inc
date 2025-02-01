@@ -23,6 +23,7 @@ BLACK    = $0F
 SKY_BLUE_LIGHT  = $3c
 
 ;Palettes -> PPU memory from $3f00 to $3f20
+PPUPALETTES = $3F00
 PPU_BG_PALETTE_0 = $3F00 ; 4 colors in each palette. First one is universal background in all of them.
 PPU_BG_PALETTE_1 = $3F04
 PPU_BG_PALETTE_2 = $3F08
@@ -57,15 +58,27 @@ BTN_B       = %01000000
 BTN_A       = %10000000
 
 ; ---------------------------------------------------------------------------
-; NES LIB PAGE ZERO CONSTANTS ($00-$2F)
+; NES LIB PAGE ZERO CONSTANTS ($00-$CF)
 ; ---------------------------------------------------------------------------
 IRQ_ADDR = $01 ; $02
 NMI_ADDR = $03 ; $04
-
-; Variables
 GAMEPAD1  = $05
 GAMEPAD2  = $06
 SCROLLX   = $07
 SCROLLY   = $08
+DATA_POINTER = $09 ; $0A
+
+TEMP01 = $0B
+TEMP02 = $0C
+TEMP03 = $0D
+TEMP04 = $0E
+TEMP05 = $0F
+TEMP06 = $10
+TEMP07 = $11
+TEMP08 = $12
+TEMP09 = $13
+TEMP10 = $14
+
+
 OAMBUFFER = $0200
 
